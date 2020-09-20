@@ -175,8 +175,6 @@ function rollDice() {
     activateNextPlayer();
     return
   };
-  
-  console.log(currPlayer, pins);
 
   if (players[currPlayer - 1] === -1) {
     if (rndm === 6) {
