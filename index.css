@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.player-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-btn {
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: #fff;
+  margin: 12px;
+  color: #000;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  height: 80px;
+  width: 80px;
+  margin: 2px;
+  padding: 4px;
+  background-color: #ccc;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 #ccc;
+}
+
+.pins-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
+}
+
+.pin {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 2px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+  box-shadow: 0 2px 1px 0 #000;
+  transition: all 2s ease-in-out;
+}
+
+.pin.red {
+  background-color: red;
+}
+
+.pin.blue {
+  background-color: blue;
+}
+
+.pin.green {
+  background-color: green;
+}
+
+.pin.yellow {
+  background-color: yellow;
+}
+
+.posn-num {
+  position: absolute;
+  left: 2px;
+  bottom: 2px;
+}
+
+.snake, .snake-conn {
+  background-color: #000;
+  color: #fff;
+}
+
+.ladder, .ladder-conn {
+  background-color: #fff;
+  color: #000;
+}
+
+.connector {
+  position: absolute;
+  height: 3px;
+  transform-origin: left;
+  box-shadow: 0 1px 2px 0 #ccc;
+}
